@@ -23,7 +23,7 @@ end
 
 app_repo_list,domain_repo_list,qe_repo_list,ecomm_repo_list,others = Array.new(5){[]}
 # the key(is a symbol) should be the same as file name
-repo_list_hash = {:stub_app_list => app_repo_list, :stub_domain_list => domain_repo_list, :stub_qe_list => qe_repo_list, :stub_ecomm_list => ecomm_repo_list}
+repo_list_hash = {:app_list => app_repo_list, :domain_list => domain_repo_list, :qe_list => qe_repo_list, :ecomm_list => ecomm_repo_list}
 
 parsed = JSON.parse(json_body)
 parsed.each do |h|
